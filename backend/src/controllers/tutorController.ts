@@ -1,9 +1,12 @@
 import { Response } from 'express';
 import { AuthenticatedRequest } from '../middleware/authMiddleware';
 import { supabase } from '../config/supabaseClient';
-import { OllamaService as GeminiService } from '../services/ollamaService';
+import { initNLP, processWithNLP } from '../services/nlpService';
 import fs from 'fs';
 import path from 'path';
+
+// Initialize NLP model when server starts (trains once, reuses for all requests)
+initNLP().catch((err) => console.error('NLP init failed:', err));
 
 export const getChatHistory = async (req: AuthenticatedRequest, res: Response): Promise<void> => {
   try {
@@ -77,8 +80,8 @@ export const sendMessage = async (req: AuthenticatedRequest, res: Response): Pro
       }
     }
     
-    // Call Gemini tutoring API
-    const reply = await GeminiService.tutorChat(message, chatHistory, context);
+    // Call local NLP engine (no API key needed)
+    const reply = await processWithNLP(message);
 
     // Save to database
     if (req.user && message && message.trim() && reply && reply.trim()) {

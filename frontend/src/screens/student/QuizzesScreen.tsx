@@ -63,31 +63,19 @@ interface ImageQuestionPaper {
   isUserUploaded?: boolean;
 }
 
-// 70 Unique Question Papers (10 Papers x 7 Subjects)
+// 60 Unique Question Papers (10 Papers x 6 Subjects)
 const ALL_70_SUBJECT_PAPERS: ImageQuestionPaper[] = [
-  // ── Java Programming (10 Papers) ──
-  { id: 'java-01', num: 1, fileName: 'Java_Paper_01.png', title: 'Paper 01: Java OOP & Class Inheritance', subject: 'Java Programming', questionsCount: 60, imageUrl: '/question_papers/Java_Paper_01.png' },
-  { id: 'java-02', num: 2, fileName: 'Java_Paper_02.png', title: 'Paper 02: Java Multithreading & Concurrency', subject: 'Java Programming', questionsCount: 55, imageUrl: '/question_papers/Java_Paper_02.png' },
-  { id: 'java-03', num: 3, fileName: 'Java_Paper_03.png', title: 'Paper 03: Java Collections Framework & Generics', subject: 'Java Programming', questionsCount: 50, imageUrl: '/question_papers/Java_Paper_03.png' },
-  { id: 'java-04', num: 4, fileName: 'Java_Paper_04.png', title: 'Paper 04: Java Exception Handling & Logging', subject: 'Java Programming', questionsCount: 65, imageUrl: '/question_papers/Java_Paper_04.png' },
-  { id: 'java-05', num: 5, fileName: 'Java_Paper_05.png', title: 'Paper 05: Java 8+ Streams & Lambda Expressions', subject: 'Java Programming', questionsCount: 70, imageUrl: '/question_papers/Java_Paper_05.png' },
-  { id: 'java-06', num: 6, fileName: 'Java_Paper_06.png', title: 'Paper 06: Java JVM Memory & Garbage Collection', subject: 'Java Programming', questionsCount: 75, imageUrl: '/question_papers/Java_Paper_06.png' },
-  { id: 'java-07', num: 7, fileName: 'Java_Paper_07.png', title: 'Paper 07: Java File I/O & Serialization', subject: 'Java Programming', questionsCount: 60, imageUrl: '/question_papers/Java_Paper_07.png' },
-  { id: 'java-08', num: 8, fileName: 'Java_Paper_08.png', title: 'Paper 08: Java Design Patterns & SOLID', subject: 'Java Programming', questionsCount: 50, imageUrl: '/question_papers/Java_Paper_08.png' },
-  { id: 'java-09', num: 9, fileName: 'Java_Paper_09.png', title: 'Paper 09: Java Spring Boot & REST APIs', subject: 'Java Programming', questionsCount: 55, imageUrl: '/question_papers/Java_Paper_09.png' },
-  { id: 'java-10', num: 10, fileName: 'Java_Paper_10.png', title: 'Paper 10: Java Database Connectivity (JDBC)', subject: 'Java Programming', questionsCount: 65, imageUrl: '/question_papers/Java_Paper_10.png' },
-
-  // ── Python Data Science (10 Papers) ──
-  { id: 'py-01', num: 1, fileName: 'Python_Paper_01.png', title: 'Paper 01: Python Fundamentals & Data Structures', subject: 'Python Data Science', questionsCount: 60, imageUrl: '/question_papers/Python_Paper_01.png' },
-  { id: 'py-02', num: 2, fileName: 'Python_Paper_02.png', title: 'Paper 02: NumPy Array Computation & Vectors', subject: 'Python Data Science', questionsCount: 55, imageUrl: '/question_papers/Python_Paper_02.png' },
-  { id: 'py-03', num: 3, fileName: 'Python_Paper_03.png', title: 'Paper 03: Pandas Data Cleaning & Aggregation', subject: 'Python Data Science', questionsCount: 50, imageUrl: '/question_papers/Python_Paper_03.png' },
-  { id: 'py-04', num: 4, fileName: 'Python_Paper_04.png', title: 'Paper 04: Matplotlib & Seaborn Visualization', subject: 'Python Data Science', questionsCount: 65, imageUrl: '/question_papers/Python_Paper_04.png' },
-  { id: 'py-05', num: 5, fileName: 'Python_Paper_05.png', title: 'Paper 05: Scikit-Learn Classification Models', subject: 'Python Data Science', questionsCount: 70, imageUrl: '/question_papers/Python_Paper_05.png' },
-  { id: 'py-06', num: 6, fileName: 'Python_Paper_06.png', title: 'Paper 06: Scikit-Learn Regression & Clustering', subject: 'Python Data Science', questionsCount: 75, imageUrl: '/question_papers/Python_Paper_06.png' },
-  { id: 'py-07', num: 7, fileName: 'Python_Paper_07.png', title: 'Paper 07: TensorFlow & Keras Deep Learning', subject: 'Python Data Science', questionsCount: 60, imageUrl: '/question_papers/Python_Paper_07.png' },
-  { id: 'py-08', num: 8, fileName: 'Python_Paper_08.png', title: 'Paper 08: Natural Language Processing (NLP)', subject: 'Python Data Science', questionsCount: 50, imageUrl: '/question_papers/Python_Paper_08.png' },
-  { id: 'py-09', num: 9, fileName: 'Python_Paper_09.png', title: 'Paper 09: Time Series Analysis & Forecasting', subject: 'Python Data Science', questionsCount: 55, imageUrl: '/question_papers/Python_Paper_09.png' },
-  { id: 'py-10', num: 10, fileName: 'Python_Paper_10.png', title: 'Paper 10: Feature Engineering & Tuning', subject: 'Python Data Science', questionsCount: 65, imageUrl: '/question_papers/Python_Paper_10.png' },
+  // ── English (10 Papers) ──
+  { id: 'eng-01', num: 1, fileName: 'English_Paper_01.png', title: 'Paper 01: Grammar & Parts of Speech', subject: 'English', questionsCount: 60, imageUrl: '/question_papers/English_Paper_01.png' },
+  { id: 'eng-02', num: 2, fileName: 'English_Paper_02.png', title: 'Paper 02: Reading Comprehension', subject: 'English', questionsCount: 55, imageUrl: '/question_papers/English_Paper_02.png' },
+  { id: 'eng-03', num: 3, fileName: 'English_Paper_03.png', title: 'Paper 03: Vocabulary & Word Usage', subject: 'English', questionsCount: 50, imageUrl: '/question_papers/English_Paper_03.png' },
+  { id: 'eng-04', num: 4, fileName: 'English_Paper_04.png', title: 'Paper 04: Essay Writing & Composition', subject: 'English', questionsCount: 65, imageUrl: '/question_papers/English_Paper_04.png' },
+  { id: 'eng-05', num: 5, fileName: 'English_Paper_05.png', title: 'Paper 05: Poetry & Literary Devices', subject: 'English', questionsCount: 70, imageUrl: '/question_papers/English_Paper_05.png' },
+  { id: 'eng-06', num: 6, fileName: 'English_Paper_06.png', title: 'Paper 06: Tenses & Verb Forms', subject: 'English', questionsCount: 75, imageUrl: '/question_papers/English_Paper_06.png' },
+  { id: 'eng-07', num: 7, fileName: 'English_Paper_07.png', title: 'Paper 07: Synonyms, Antonyms & Idioms', subject: 'English', questionsCount: 60, imageUrl: '/question_papers/English_Paper_07.png' },
+  { id: 'eng-08', num: 8, fileName: 'English_Paper_08.png', title: 'Paper 08: Sentence Structure & Clauses', subject: 'English', questionsCount: 50, imageUrl: '/question_papers/English_Paper_08.png' },
+  { id: 'eng-09', num: 9, fileName: 'English_Paper_09.png', title: 'Paper 09: Prose & Fiction Analysis', subject: 'English', questionsCount: 55, imageUrl: '/question_papers/English_Paper_09.png' },
+  { id: 'eng-10', num: 10, fileName: 'English_Paper_10.png', title: 'Paper 10: Letter & Report Writing', subject: 'English', questionsCount: 65, imageUrl: '/question_papers/English_Paper_10.png' },
 
   // ── Physics (10 Papers) ──
   { id: 'phy-01', num: 1, fileName: 'Physics_Paper_01.png', title: 'Paper 01: Newtonian Mechanics & Kinematics', subject: 'Physics', questionsCount: 60, imageUrl: '/question_papers/Physics_Paper_01.png' },
@@ -151,218 +139,111 @@ const ALL_70_SUBJECT_PAPERS: ImageQuestionPaper[] = [
 ];
 
 const REAL_MCQ_BANK = [
-  // ── Java Programming (15 Unique MCQs) ──
+  // ── English (15 Unique MCQs) ──
   {
-    subject: "Java Programming",
-    text: "Which of the following is not a primitive data type in Java?",
-    options: ["int", "boolean", "String", "double"],
+    subject: "English",
+    text: "Which of the following is a proper noun?",
+    options: ["city", "London", "river", "mountain"],
+    ans: 1,
+    exp: "Proper nouns name specific people, places, or things and are always capitalized. 'London' is a specific city name."
+  },
+  {
+    subject: "English",
+    text: "Which figure of speech is used in: 'The wind whispered through the trees'?",
+    options: ["Simile", "Metaphor", "Personification", "Alliteration"],
     ans: 2,
-    exp: "String is an object reference class in Java, whereas int, boolean, and double are primitive types."
+    exp: "Personification gives human qualities (whispering) to non-human things (the wind)."
   },
   {
-    subject: "Java Programming",
-    text: "Which keyword is used to prevent a method from being overridden in Java?",
-    options: ["static", "final", "abstract", "private"],
+    subject: "English",
+    text: "Choose the correct synonym for 'Benevolent':",
+    options: ["Cruel", "Kind", "Angry", "Timid"],
     ans: 1,
-    exp: "The 'final' keyword prevents class inheritance and method overriding."
+    exp: "'Benevolent' means well-meaning and kind. 'Kind' is its closest synonym."
   },
   {
-    subject: "Java Programming",
-    text: "Which constructor is provided by compiler if no constructor is explicitly defined?",
-    options: ["Parameterized constructor", "Copy constructor", "Default no-arg constructor", "Static constructor"],
+    subject: "English",
+    text: "Which sentence uses the correct form of the verb?",
+    options: ["She don't know the answer.", "She doesn't knows the answer.", "She doesn't know the answer.", "She not know the answer."],
     ans: 2,
-    exp: "The compiler automatically creates a default no-argument constructor if none exists."
+    exp: "Third person singular present uses 'doesn't' + base verb form."
   },
   {
-    subject: "Java Programming",
-    text: "Which interface in Java Collections does not inherit from Collection interface?",
-    options: ["List", "Set", "Map", "Queue"],
+    subject: "English",
+    text: "What is the antonym of 'Verbose'?",
+    options: ["Talkative", "Concise", "Lengthy", "Eloquent"],
+    ans: 1,
+    exp: "'Verbose' means using too many words. Its antonym is 'Concise' — brief and to the point."
+  },
+  {
+    subject: "English",
+    text: "Which type of clause cannot stand alone as a sentence?",
+    options: ["Independent clause", "Main clause", "Subordinate clause", "Coordinate clause"],
     ans: 2,
-    exp: "Map interface is part of the Java Collections Framework but does not extend Collection interface."
+    exp: "A subordinate (dependent) clause relies on a main clause to form a complete sentence."
   },
   {
-    subject: "Java Programming",
-    text: "Which keyword is used to manually throw an exception in Java?",
-    options: ["throws", "throw", "catch", "try"],
+    subject: "English",
+    text: "Identify the literary device: 'Peter Piper picked a peck of pickled peppers.'",
+    options: ["Assonance", "Alliteration", "Onomatopoeia", "Rhyme"],
     ans: 1,
-    exp: "The 'throw' keyword is used inside a method body to explicitly throw an exception object."
+    exp: "Alliteration is the repetition of the same consonant sound at the beginning of closely connected words."
   },
   {
-    subject: "Java Programming",
-    text: "What is the default access modifier in Java when none is specified?",
-    options: ["public", "private", "protected", "Package-private (default)"],
-    ans: 3,
-    exp: "When no access modifier is declared, members are accessible within the same package."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which method is called to start the execution of a Thread in Java?",
-    options: ["run()", "start()", "execute()", "init()"],
-    ans: 1,
-    exp: "Calling start() creates a new call stack and executes the thread's run() method asynchronously."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which superclass is at the root of the Java class hierarchy?",
-    options: ["java.lang.Object", "java.lang.Class", "java.lang.System", "java.lang.Base"],
-    ans: 0,
-    exp: "Object is the ultimate parent class of all classes in Java."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which Java 8 feature allows concise representation of single-method interfaces?",
-    options: ["Generics", "Lambda expressions", "Annotations", "Reflection"],
-    ans: 1,
-    exp: "Lambda expressions provide clear syntax to implement functional interfaces."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which keyword is used to handle exceptions after a try block?",
-    options: ["except", "catch", "handle", "finally"],
-    ans: 1,
-    exp: "The catch block intercepts and processes exceptions thrown from the try block."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which package is automatically imported into every Java source file?",
-    options: ["java.util", "java.io", "java.lang", "java.net"],
+    subject: "English",
+    text: "Which tense is used in: 'By next year, she will have completed her degree.'?",
+    options: ["Simple Future", "Future Continuous", "Future Perfect", "Present Perfect"],
     ans: 2,
-    exp: "The java.lang package contains fundamental classes and is imported implicitly."
+    exp: "Future Perfect tense (will have + past participle) describes an action completed before a future point."
   },
   {
-    subject: "Java Programming",
-    text: "Where are objects dynamically allocated in JVM memory during runtime?",
-    options: ["Stack memory", "Heap memory", "Method area", "PC register"],
+    subject: "English",
+    text: "What does the idiom 'Break the ice' mean?",
+    options: ["Destroy frozen water", "Begin a conversation in a social setting", "Cause a conflict", "Stop an argument"],
     ans: 1,
-    exp: "Objects and instances created with 'new' are stored in Heap memory."
+    exp: "'Break the ice' means to initiate conversation or ease tension in a social situation."
   },
   {
-    subject: "Java Programming",
-    text: "Which marker interface must be implemented to save an object state to a byte stream?",
-    options: ["Cloneable", "Serializable", "Comparable", "Runnable"],
-    ans: 1,
-    exp: "java.io.Serializable enables object flattening for file storage or network transmission."
-  },
-  {
-    subject: "Java Programming",
-    text: "What is the correct syntax to instantiate an integer array of size 10 in Java?",
-    options: ["int arr[10];", "int[] arr = new int[10];", "array arr = new array(10);", "int arr = new int(10);"],
-    ans: 1,
-    exp: "In Java, array declaration uses type[] name = new type[size]."
-  },
-  {
-    subject: "Java Programming",
-    text: "Which keyword is used to invoke a parent class constructor in a subclass?",
-    options: ["this", "super", "parent", "base"],
-    ans: 1,
-    exp: "The super() call invokes a superclass constructor from inside a subclass constructor."
-  },
-
-  // ── Python Data Science (15 Unique MCQs) ──
-  {
-    subject: "Python Data Science",
-    text: "Which Python built-in data structure is immutable?",
-    options: ["List", "Dictionary", "Set", "Tuple"],
-    ans: 3,
-    exp: "Tuples are immutable sequence types; their elements cannot be changed after creation."
-  },
-  {
-    subject: "Python Data Science",
-    text: "What is the output of len({'a': 1, 'b': 2, 'c': 3}) in Python?",
-    options: ["3", "6", "2", "Error"],
-    ans: 0,
-    exp: "The len() function returns the total count of key-value pairs in the dictionary."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which Pandas function is used to convert data into DataFrame format?",
-    options: ["pd.DataFrame()", "pd.to_matrix()", "pd.Series()", "pd.Convert()"],
-    ans: 0,
-    exp: "pd.DataFrame() constructs a two-dimensional labeled data structure with columns of potentially different types."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which keyword is used to define a custom function in Python?",
-    options: ["func", "def", "function", "lambda"],
-    ans: 1,
-    exp: "The 'def' keyword introduces a function definition in Python."
-  },
-  {
-    subject: "Python Data Science",
-    text: "What is the return type of type([]) in Python?",
-    options: ["<class 'list'>", "<class 'array'>", "<class 'tuple'>", "<class 'set'>"],
-    ans: 0,
-    exp: "Square brackets [] instantiate a built-in Python list."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which Python library provides n-dimensional array objects for scientific computing?",
-    options: ["NumPy", "Flask", "Django", "Requests"],
-    ans: 0,
-    exp: "NumPy provides ndarray objects for high-performance vectorized mathematical operations."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which method is used to add an item to the end of a list in Python?",
-    options: ["add()", "push()", "append()", "insert()"],
+    subject: "English",
+    text: "Which punctuation mark is used to indicate possession?",
+    options: ["Comma", "Colon", "Apostrophe", "Semicolon"],
     ans: 2,
-    exp: "list.append(item) adds an element to the end of the existing list."
+    exp: "An apostrophe followed by 's' (or just apostrophe for plural) indicates ownership or possession."
   },
   {
-    subject: "Python Data Science",
-    text: "Which Pandas function reads a comma-separated values file into a DataFrame?",
-    options: ["pd.read_csv()", "pd.load_csv()", "pd.import_csv()", "pd.open_csv()"],
-    ans: 0,
-    exp: "pd.read_csv() parses CSV file data into a structured Pandas DataFrame."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which library is most commonly paired with Matplotlib for statistical data graphics?",
-    options: ["Seaborn", "Pygame", "Scrapy", "Tkinter"],
-    ans: 0,
-    exp: "Seaborn is built on top of Matplotlib and integrates closely with Pandas data structures."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which symbol is used to start a single-line comment in Python?",
-    options: ["//", "#", "/*", "--"],
+    subject: "English",
+    text: "Choose the correct article: '______ apple a day keeps the doctor away.'",
+    options: ["A", "An", "The", "No article"],
     ans: 1,
-    exp: "The hash character # starts a single-line comment in Python."
+    exp: "The indefinite article 'An' is used before words starting with a vowel sound."
   },
   {
-    subject: "Python Data Science",
-    text: "Which string method converts all characters in a string to lowercase?",
-    options: [".lower()", ".to_lower()", ".lowercase()", ".down()"],
-    ans: 0,
-    exp: "str.lower() returns a copy of the string converted to lowercase."
+    subject: "English",
+    text: "Which of the following is an example of a compound sentence?",
+    options: ["She sings.", "Although she was tired, she finished the work.", "She sings and he dances.", "The quick brown fox."],
+    ans: 2,
+    exp: "A compound sentence joins two independent clauses with a coordinating conjunction like 'and', 'but', 'or'."
   },
   {
-    subject: "Python Data Science",
-    text: "What is the result of the exponentiation operation 2 ** 3 in Python?",
-    options: ["6", "8", "9", "5"],
+    subject: "English",
+    text: "What is the plural of 'Criterion'?",
+    options: ["Criterions", "Criteria", "Criterias", "Criterium"],
     ans: 1,
-    exp: "The ** operator computes exponentiation: 2³ = 8."
+    exp: "'Criterion' is a Greek-origin word whose correct plural is 'Criteria'."
   },
   {
-    subject: "Python Data Science",
-    text: "Which data structure stores an unordered collection of unique elements?",
-    options: ["List", "Set", "Tuple", "Dictionary"],
+    subject: "English",
+    text: "Which word is a conjunction in: 'I wanted to go, but it was raining.'?",
+    options: ["wanted", "go", "but", "raining"],
+    ans: 2,
+    exp: "'But' is a coordinating conjunction connecting two independent clauses."
+  },
+  {
+    subject: "English",
+    text: "Which of the following sentences is in the passive voice?",
+    options: ["The dog chased the cat.", "The cat was chased by the dog.", "She is running fast.", "He will finish the task."],
     ans: 1,
-    exp: "Sets automatically eliminate duplicate items and maintain unique elements."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which Scikit-learn module splits datasets into random train and test subsets?",
-    options: ["train_test_split", "data_split", "cross_split", "sample_split"],
-    ans: 0,
-    exp: "sklearn.model_selection.train_test_split partitions dataset arrays into train/test sets."
-  },
-  {
-    subject: "Python Data Science",
-    text: "Which operator performs floor division in Python?",
-    options: ["/", "//", "%", "div"],
-    ans: 1,
-    exp: "The // operator divides numbers and rounds down to the nearest integer."
+    exp: "Passive voice: subject receives the action. 'The cat was chased by the dog' uses 'was + past participle'."
   },
 
   // ── Physics (15 Unique MCQs) ──
@@ -923,7 +804,7 @@ export const QuizzesScreen: React.FC<{ navigation?: any }> = () => {
   const [quizFinished, setQuizFinished] = useState(false);
   const [scoreResult, setScoreResult] = useState<number>(0);
 
-  const subjects = ['All', 'Java Programming', 'Python Data Science', 'Physics', 'Chemistry', 'Biology', 'Mathematics', 'Computer Science'];
+  const subjects = ['All', 'English', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science'];
 
   const filteredQuizzes = quizzes.filter(
     (q) => selectedSubject === 'All' || q.subject === selectedSubject
@@ -944,10 +825,9 @@ export const QuizzesScreen: React.FC<{ navigation?: any }> = () => {
   // Helper function to infer subject from paper filename if user uploaded custom files
   const detectSubjectFromFileName = (fileName: string): string => {
     const lower = fileName.toLowerCase();
+    if (lower.includes('eng') || lower.includes('grammar') || lower.includes('english')) return 'English';
     if (lower.includes('math') || lower.includes('algebra') || lower.includes('calc')) return 'Mathematics';
     if (lower.includes('phys') || lower.includes('motion') || lower.includes('force')) return 'Physics';
-    if (lower.includes('java') || lower.includes('oop')) return 'Java Programming';
-    if (lower.includes('py') || lower.includes('data') || lower.includes('numpy')) return 'Python Data Science';
     if (lower.includes('chem') || lower.includes('organic')) return 'Chemistry';
     if (lower.includes('bio') || lower.includes('dna') || lower.includes('cell')) return 'Biology';
     if (lower.includes('cs') || lower.includes('algo') || lower.includes('sql')) return 'Computer Science';
@@ -1220,7 +1100,7 @@ export const QuizzesScreen: React.FC<{ navigation?: any }> = () => {
         <View style={styles.generatorHeader}>
           <View style={styles.sparkleBadge}>
             <Sparkles color="#4F46E5" size={16} />
-            <Text style={styles.sparkleBadgeText}>Question Paper Repository (70 Total Papers)</Text>
+            <Text style={styles.sparkleBadgeText}>Question Paper Repository (60 Total Papers)</Text>
           </View>
           <View style={styles.counterBadge}>
             <FileText color="#0369A1" size={14} />
@@ -1244,14 +1124,14 @@ export const QuizzesScreen: React.FC<{ navigation?: any }> = () => {
               <Text style={styles.primaryUploadBtnText}>Browse & Upload Images</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.demoPresetBtn} onPress={() => handleSelectSubjectTenPapers('Java Programming')}>
+            <TouchableOpacity style={styles.demoPresetBtn} onPress={() => handleSelectSubjectTenPapers('English')}>
               <BookOpen size={16} color="#4F46E5" />
-              <Text style={styles.demoPresetBtnText}>Load 10 Java Papers</Text>
+              <Text style={styles.demoPresetBtnText}>Load 10 English Papers</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.demoPresetBtn} onPress={() => handleSelectSubjectTenPapers('Python Data Science')}>
+            <TouchableOpacity style={styles.demoPresetBtn} onPress={() => handleSelectSubjectTenPapers('Mathematics')}>
               <BookOpen size={16} color="#4F46E5" />
-              <Text style={styles.demoPresetBtnText}>Load 10 Python Papers</Text>
+              <Text style={styles.demoPresetBtnText}>Load 10 Maths Papers</Text>
             </TouchableOpacity>
           </View>
         </TouchableOpacity>
